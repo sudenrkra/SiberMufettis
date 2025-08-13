@@ -1,0 +1,218 @@
+[
+  {
+    "appName": "TemizEv",
+    "permission": "Konum Erişimi",
+    "description": "Ev temizliği hizmetleri için konum bilgisi kullanıyor.",
+    "details": "Sadece adres belirlemek amacıyla konum kullanılır.",
+    "isSafe": true,
+    "icon": "temiz_ev"
+  },
+  {
+    "appName": "Kitap Tarayıcı",
+    "permission": "Kamera Erişimi",
+    "description": "Kitapları taramak için kamera erişimi istiyor.",
+    "details": "Uygulama OCR işlemi için kamera kullanıyor.",
+    "isSafe": true,
+    "icon": "kitap_tarayici"
+  },
+  {
+    "appName": "Yemek Hatırlatıcı",
+    "permission": "Bildirim",
+    "description": "Yemek saatlerini hatırlatmak için bildirim gönderiyor.",
+    "details": "Bildirimler saatlik hatırlatmalar için kullanılıyor.",
+    "isSafe": true,
+    "icon": "yemek_hatirlatici"
+  },
+  {
+    "appName": "FotoDüzenleyici",
+    "permission": "Galeri Erişimi",
+    "description": "Fotoğraflara filtre uygulamak için galeriye erişmek istiyor.",
+    "details": "Uygulama fotoğrafları sunucuya yüklemiyor.",
+    "isSafe": true,
+    "icon": "foto_duzenleyici"
+  },
+  {
+    "appName": "Restoran Bul",
+    "permission": "Konum Erişimi",
+    "description": "Yakındaki restoranları göstermek için konum istiyor.",
+    "details": "Konum verileri analiz için toplanıp üçüncü partiye aktarılabilir.",
+    "isSafe": false,
+    "icon": "rest_bul"
+  },
+  {
+    "appName": "Eğlence Kamera",
+    "permission": "Kamera ve Mikrofon",
+    "description": "Video filtreleri ve ses efektleri sunuyor.",
+    "details": "Mikrofon izni aktifken arka planda ses kaydı yapılabiliyor.",
+    "isSafe": false,
+    "icon": "eglence_kamera"
+  },
+  {
+    "appName": "Hızlı Not",
+    "permission": "Depolama Erişimi",
+    "description": "Notları cihazda saklamak için dosya erişimi istiyor.",
+    "details": "Bazı kullanıcı raporları, verilerin izinsiz bir şekilde yedeklendiğini belirtiyor.",
+    "isSafe": false,
+    "icon": "hızlı_not"
+  },
+  {
+    "appName": "ArkaPlan Kaydedici",
+    "permission": "Mikrofon",
+    "description": "Arka planda ses kaydı yapmak için mikrofon istiyor.",
+    "details": "Ses kaydı işlevi, uygulama arka planda çalışırken de aktif kalabilir.",
+    "isSafe": false,
+    "icon": "gizli_dinleme"
+  },
+  {
+    "appName": "Gizli Lens",
+    "permission": "Kamera ve Depolama",
+    "description": "AR özelliği için kamera ve dosya erişimi istiyor.",
+    "details": "Bazı durumlarda uygulama davranışlarının beklentinin dışında olabileceği gözlemlenmiştir.",
+    "isSafe": false,
+    "icon": "gizli_kamera"
+  },
+  {
+    "appName": "Ağ Analiz",
+    "permission": "Wi-Fi ve Ağ Erişimi",
+    "description": "Ağ bağlantısı testi yapıyor gibi görünüyor.",
+    "details":"Veri iletimi uygulama arka plandayken de zaman zaman devam edebilir.",
+    "isSafe": false,
+    "icon": "ag_analiz"
+  },
+  {
+    "appName": "Sağlık Takip",
+    "permission": "Sağlık verileri",
+    "description": "Günlük adım sayınızı takip eder.",
+    "details": "Veriler yalnızca kullanıcıya gösterilir, üçüncü taraflarla paylaşılmaz.",
+    "isSafe": true,
+    "icon": "saglık_takip"
+  },
+  {
+    "appName": "Hava Durumu",
+    "permission": "Konum Erişimi",
+    "description": "Bulunduğunuz bölgenin hava durumunu gösterir.",
+    "details": "Konum bilgisi yalnızca hava durumu tahmini için kullanılır.",
+    "isSafe": true,
+    "icon": "hava_durumu"
+  },
+  {
+    "appName": "Sesli Not",
+    "permission": "Mikrofon",
+    "description": "Sesli notlar kaydetmek için mikrofon erişimi istiyor.",
+    "details": "Kayıtlar yalnızca cihazda saklanır, bulut yedekleme yapılmaz.",
+    "isSafe": true,
+    "icon": "sesli_not"
+  },
+  {
+    "appName": "Alışveriş Yardımcısı",
+    "permission": "Bildirim",
+    "description": "İndirimleri ve fırsatları bildirimle haber verir.",
+    "details": "Bildirimler yalnızca kullanıcı isteğiyle gönderilir.",
+    "isSafe": true,
+    "icon": "alisveris_yardimcisi"
+  },
+  {
+    "appName": "Güvenli Şifre",
+    "permission": "Depolama Erişimi",
+    "description": "Şifrelerinizi güvenli bir şekilde saklar.",
+    "details": "Şifreler cihazda şifrelenerek saklanır.",
+    "isSafe": true,
+    "icon": "guvenli_sifre"
+  },
+  {
+    "appName": "Takvim Planlayıcı",
+    "permission": "Takvim Erişimi",
+    "description": "Etkinliklerinizi ve randevularınızı yönetir.",
+    "details": "Takvim verileri yalnızca cihazda saklanır,dışa aktarılmaz.",
+    "isSafe": true,
+    "icon": "takvim_planlayici"
+  },
+  {
+    "appName": "Gizli Dinleme",
+    "permission": "Mikrofon",
+    "description": "Arka planda ses kaydı yapabilir.",
+    "details":"Kayıt işlemleri bazı durumlarda kullanıcı etkileşimi olmadan başlayabilir.",
+    "isSafe": false,
+    "icon": "gizli_dinleme"
+  },
+  {
+    "appName": "Konum Takip",
+    "permission": "Konum Erişimi",
+    "description": "Gerçek zamanlı konum takibi yapar.",
+    "details": "Konum verileri üçüncü taraflarla paylaşılabilir.",
+    "isSafe": false,
+    "icon": "konum"
+  },
+  {
+    "appName": "Gizli Dosya",
+    "permission": "Depolama Erişimi",
+    "description": "Dosyalarınızı gizli bir şekilde saklar.",
+    "details": "Bazı kullanıcı raporları, verilerin izinsiz bir şekilde buluta yüklendiğini belirtiyor.",
+    "isSafe": false,
+    "icon": "gizli_dosya"
+  },
+  {
+    "appName": "Hızlı Çeviri",
+    "permission": "Kamera Erişimi",
+    "description": "Metinleri anında çevirmek için kamera erişimi istiyor.",
+    "details": "OCR teknolojisi kullanarak görüntülerdeki metinleri çeviriyor.",
+    "isSafe": true,
+    "icon": "hizli_ceviri"
+  },
+  {
+    "appName": "Sesli Kitap",
+    "permission": "Mikrofon",
+    "description": "Sesli kitapları dinlerken sesli notlar almanızı sağlar.",
+    "details": "Mikrofon yalnızca kullanıcı isteğiyle aktif olur.",
+    "isSafe": true,
+    "icon": "sesli_kitap"
+  },
+  {
+    "appName": "Hava Takip",
+    "permission": "Konum Erişimi",
+    "description": "Bulunduğunuz bölgenin hava durumunu gösterir.",
+    "details": "Konum bilgisi yalnızca hava tahmini için kullanılır.",
+    "isSafe": true,
+    "icon": "hava_takip"
+  },
+  {
+    "appName": "Gizli Mesaj",
+    "permission": "Depolama Erişimi",
+    "description": "Şifreli mesajlar göndermek için dosya erişimi istiyor.",
+    "details": "Mesajlar cihazda şifrelenerek saklanır.",
+    "isSafe": true,
+    "icon": "gizli_mesaj"
+  },
+  {
+    "appName": "AdımSayarPro",
+    "permission": "Sağlık Verileri",
+    "description": "Günlük adım sayınızı ve kalori tüketiminizi takip eder.",
+    "details": "Veriler yalnızca kullanıcıya gösterilir, üçüncü taraflarla paylaşılmaz.",
+    "isSafe": true,
+    "icon": "adımsayarpro"
+  },
+  {
+    "appName": "Gizli Kamera",
+    "permission": "Kamera",
+    "description": "Arka planda görüntü kaydı yapabilir.",
+    "details": "Uygulama kullanıcıdan habersiz kayıt başlatabiliyor.",
+    "isSafe": false,
+    "icon": "gizli_kamera"
+  },
+  {
+    "appName": "Şifre Kasası",
+    "permission": "Depolama Erişimi",
+    "description": "Şifrelerinizi güvenli bir şekilde saklar.",
+    "details": "Şifreler cihazda şifrelenerek saklanır, üçüncü taraflarla paylaşılmaz.",
+    "isSafe": true,
+    "icon": "sifre_kasası"
+  },
+  {
+    "appName": "Harita Yardımcısı",
+    "permission": "Konum Erişimi",
+    "description": "Navigasyon hizmetleri sunar.",
+    "details": "Konum verileri analiz için toplanıp üçüncü partiye aktarılabilir.",
+    "isSafe": false,
+    "icon": "konum_takip"
+  }
+]
