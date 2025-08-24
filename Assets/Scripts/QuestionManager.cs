@@ -68,23 +68,21 @@ public class QuestionManager : MonoBehaviour
     {
         if (appList == null || appList.Count == 0) return;
 
-        // Geriye kalan gösterilmemiþ uygulamalarý filtrele
+
         List<AppData> remainingApps = appList.FindAll(app => !displayedAppNames.Contains(app.appName));
 
         if (remainingApps.Count == 0)
         {
             Debug.Log("Tüm uygulamalar gösterildi.");
-            // Burada istersen oyunu bitir veya uygulama listesini sýfýrla
             return;
         }
 
-        // Rastgele bir uygulama seç
+
         currentApp = remainingApps[Random.Range(0, remainingApps.Count)];
 
-        // Gösterildi olarak iþaretle
         displayedAppNames.Add(currentApp.appName);
 
-        // UI güncelle
+
         appNameText.text = currentApp.appName;
         permissionText.text = "Ýzin: " + currentApp.permission;
         descriptionText.text = currentApp.description;
@@ -110,12 +108,12 @@ public class QuestionManager : MonoBehaviour
             if (currentApp.isSafe)
             {
                 scoreManager.AddScore(10);
-                SoundManager.instance.PlayCorrect(); // ? Doðruysa ding
+                SoundManager.instance.PlayCorrect(); 
             }
             else
             {
                 healthManager.DecreaseHealth();
-                SoundManager.instance.PlayWrong();   // ? Yanlýþsa buzz
+                SoundManager.instance.PlayWrong();   
             }
 
             ShowRandomApp();
@@ -128,12 +126,12 @@ public class QuestionManager : MonoBehaviour
             if (!currentApp.isSafe)
             {
                 scoreManager.AddScore(10);
-                SoundManager.instance.PlayCorrect(); // ? Doðruysa ding
+                SoundManager.instance.PlayCorrect(); 
             }
             else
             {
                 healthManager.DecreaseHealth();
-                SoundManager.instance.PlayWrong();   // ? Yanlýþsa buzz
+                SoundManager.instance.PlayWrong();   
             }
 
             ShowRandomApp();

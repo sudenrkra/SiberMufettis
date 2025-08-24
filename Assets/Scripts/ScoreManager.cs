@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public GameObject paperPanel;
 
-    public GameObject winPanel; // Inspector'dan atayacaðýz
+    public GameObject winPanel; 
     public int winScore = 100;
 
     public void AddScore(int amount)
@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // ScoreManager sahne deðiþince yok olmasýn
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -55,12 +55,11 @@ public class ScoreManager : MonoBehaviour
 
     void WinGame()
     {
-        Time.timeScale = 0f; // Oyunu durdur
-        SceneManager.LoadScene("EndScene");  // Kazanma panelini göster
+        SceneManager.LoadScene("EndScene");  
 
         if (paperPanel != null)
         {
-            paperPanel.SetActive(false); // Kaðýdý gizle
+            paperPanel.SetActive(false);
         }
         SoundManager.instance.PlayWin();
     }

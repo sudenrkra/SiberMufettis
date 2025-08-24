@@ -11,7 +11,6 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        // Baþlangýç konumu
         transform.position = cameraStartPoint.position;
         transform.rotation = cameraStartPoint.rotation;
     }
@@ -20,7 +19,6 @@ public class CameraController : MonoBehaviour
     {
         if (zooming)
         {
-            // Pozisyon ve rotasyonu yavaþça hedefe kaydýr
             transform.position = Vector3.Lerp(transform.position, cameraZoomPoint.position, Time.deltaTime * cameraSpeed);
             transform.rotation = Quaternion.Lerp(transform.rotation, cameraZoomPoint.rotation, Time.deltaTime * cameraSpeed);
         }

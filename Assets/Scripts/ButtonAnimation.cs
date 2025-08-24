@@ -5,17 +5,17 @@ using UnityEngine;
 public class ButtonAnimation : MonoBehaviour
 {
     private Vector3 startPos;
-    public float moveAmount = 50f; // Butonun ne kadar ileri-geri gideceði
-    public float speed = 2f; // Hareket hýzý
+    public float moveAmount = 50f; 
+    public float speed = 2f; 
 
     void Start()
     {
-        startPos = transform.localPosition; // Baþlangýç pozisyonunu kaydet
+        startPos = transform.localPosition;
     }
 
     void Update()
     {
-        float offsetZ = Mathf.Sin(Time.time * speed) * moveAmount; // Z ekseninde ileri-geri hareket
+        float offsetZ = Mathf.Sin(Time.time * speed) * moveAmount; 
         transform.localPosition = startPos + new Vector3(0, 0, offsetZ);
 
         float scaleFactor = 1 + Mathf.Sin(Time.time * speed) * 0.1f;

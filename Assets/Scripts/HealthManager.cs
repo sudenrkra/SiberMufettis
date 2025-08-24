@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public GameObject[] hearts; // Kalp image objeleri (UI objeleri)
+    public GameObject[] hearts;
     private int health = 3;
     public ScoreManager scoreManager;
 
@@ -16,15 +16,15 @@ public class HealthManager : MonoBehaviour
 
         if (health >= 0 && health < hearts.Length)
         {
-            hearts[health].SetActive(false); // Saðdan sola kalpleri sil
+            hearts[health].SetActive(false);
         }
 
         if (health <= 0)
         {
             PlayerPrefs.SetInt("FinalScore", FindObjectOfType<ScoreManager>().GetScore());
             PlayerPrefs.SetString("GameOverReason", "Tüm canlarýný kaybettin");
-            SoundManager.instance.PlayGameOver(); // ses önce
-            SceneManager.LoadScene("EndScene");   // sonra sahne geçiþi
+            SoundManager.instance.PlayGameOver();
+            SceneManager.LoadScene("EndScene");  
         }
     }
 

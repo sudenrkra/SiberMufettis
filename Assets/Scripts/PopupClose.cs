@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class PopupClose : MonoBehaviour
 {
-    public GameObject detailsPopupPanel; // Paneli Inspector'dan baðlayacaðýz
-    public Button closeButton; // Kapat butonu
+    public GameObject detailsPopupPanel;
+    public Button closeButton; 
 
     void Start()
     {
-        // Butonun týklanma olayýna paneli kapatma fonksiyonunu ekle
+      
         if (closeButton != null)
             closeButton.onClick.AddListener(HidePopup);
     }
 
     void HidePopup()
     {
-        detailsPopupPanel.SetActive(false); // Paneli gizle
+        detailsPopupPanel.SetActive(false); 
     }
 }

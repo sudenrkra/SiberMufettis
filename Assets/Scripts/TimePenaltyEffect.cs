@@ -34,10 +34,10 @@ public class TimePenaltyEffect : MonoBehaviour
         {
             float t = elapsed / fadeDuration;
 
-            // Yukarýdan aþaðý yavaþça iner
+
             penaltyText.rectTransform.anchoredPosition = Vector3.Lerp(startPosition, endPos, t);
 
-            // Þeffaflaþýr
+
             penaltyText.alpha = 1f - t;
 
             elapsed += Time.deltaTime;

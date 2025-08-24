@@ -9,6 +9,6 @@ public class EndScoreDisplay : MonoBehaviour
 
     private void Start()
     {
-        finalScoreText.text = " " + ScoreManager.instance.GetScore(); // GameScene’den anlýk skoru al
+        finalScoreText.text = " " + ScoreManager.instance.GetScore(); 
     }
 }

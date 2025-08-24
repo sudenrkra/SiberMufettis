@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
-    public float totalTime = 60f; // Baþlangýç süresi (saniye)
+    public float totalTime = 60f; 
     private float currentTime;
     public float remainingTime = 60f;
     public ScoreManager scoreManager;
@@ -32,28 +32,28 @@ public class TimerManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(currentTime);
         timerText.text = " " + seconds + " sn";
 
-        if (remainingTime < 10) // Son 10 saniye
+        if (remainingTime < 10) 
         {
-            timerText.color = Color.red; // Kýrmýzýya döndür
+            timerText.color = Color.red; 
         }
-    
-            remainingTime -= Time.deltaTime; // Süreyi azalt
 
-            // UI'daki metni güncelle
+        remainingTime -= Time.deltaTime;
+
+            
             timerText.text = " " + Mathf.Ceil(remainingTime).ToString();
 
-            // Son 10 saniye kaldýðýnda rengi deðiþtir
+            
             if (remainingTime < 10)
             {
-                timerText.color = Color.red; // Kýrmýzýya döndür
+                timerText.color = Color.red; 
             }
 
         if (currentTime <= 0)
         {
             PlayerPrefs.SetInt("FinalScore", FindObjectOfType<ScoreManager>().GetScore());
             PlayerPrefs.SetString("GameOverReason", "Süre doldu");
-            SoundManager.instance.PlayGameOver(); // ses önce
-            SceneManager.LoadScene("EndScene");   // sonra sahne geçiþi
+            SoundManager.instance.PlayGameOver(); 
+            SceneManager.LoadScene("EndScene");   
         }
     }
 
@@ -78,7 +78,7 @@ public class TimerManager : MonoBehaviour
     void GameOver()
     {
         isGameOver = true;
-        SceneManager.LoadScene("EndScene"); // EndScene sahne ismini buna göre güncelle
+        SceneManager.LoadScene("EndScene"); 
     }
 
 }

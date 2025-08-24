@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class SceneLoader1 : MonoBehaviour
 {
-    public Button startButton; // Baþla butonu
-    public Button exitButton; // Çýkýþ butonu
+    public Button startButton; 
+    public Button exitButton; 
 
     void Start()
     {
-        // Butonlarý otomatik olarak baðla
+        
         if (startButton != null)
             startButton.onClick.AddListener(StartGame);
 
@@ -21,7 +21,7 @@ public class SceneLoader1 : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("GameScene"); // Oyunun sahnesine geçiþ yap
+        SceneManager.LoadScene("GameScene"); 
     }
 
     public void ExitGame()
